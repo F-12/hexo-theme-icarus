@@ -3,7 +3,7 @@ family-mono = "Source Code Pro", monospace, "Microsoft YaHei"
 gap = 64px
 screen-tablet = 769px
 screen-desktop = 1088px
-screen-widescreen = 1280px
+screen-widescreen = 1440px
 screen-fullhd = 1472px
 
 /* ---------------------------------
@@ -19,6 +19,12 @@ body, button, input, select, textarea
     font-family: family-sans
 
 @media screen and (min-width: screen-widescreen)
+    .container
+        margin-left: 0.5rem;
+    .column-main
+        width: 65% !important;
+    .column-right
+        width: 30% !important;
     .is-1-column .container
     .is-2-column .container
         max-width: screen-desktop - 2 * gap
@@ -48,7 +54,6 @@ body, button, input, select, textarea
     .column-right-shadow
         &.is-sticky
             top: 1.5rem
-
 .tag
     &.is-grey
         background: #e7e7e7
